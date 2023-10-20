@@ -32,4 +32,15 @@ public class CotacaoFrete {
     private LocalDate dataPrevistaEntrega;
 
     private LocalDate dataConsulta;
+
+    public CotacaoFrete(double valorTotalFrete, double peso, LocalDate dataPrevistaEntrega, String cepOrigem,
+                        String cepDestino, String nomeDestinatario, LocalDate dataConsulta) {
+        this.valorTotalFrete = valorTotalFrete;
+        this.peso = peso;
+        this.dataPrevistaEntrega = dataPrevistaEntrega;
+        this.cepOrigem = cepOrigem;
+        this.cepDestino = cepDestino;
+        this.nomeDestinatario = nomeDestinatario;
+        this.dataConsulta = dataConsulta;
+    }
 }
